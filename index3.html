@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testt</title>
+    <style>
+        div#test{
+            background-color: rgb(236, 134, 134);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id= "test" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+      clica aqui
+ </div>
+
+    
+    <script>
+
+            var teste = window.document.getElementById('test')
+            teste.addEventListener('onclick', clicar)
+            teste.addEventListener('onmouseenter', entrar)
+            teste.addEventListener('onmouse', sair)
+        
+            function clicar(){
+                teste.innerText = 'agora vc é gay'
+                teste.style.color = 'pink'   
+            }
+            function entrar(){
+                teste.innerText = 'clica aqui'
+            }
+            function sair(){
+                teste.innerText = 'ii, é gay'
+                teste.style.color = 'red'
+                teste.style.backgroundColor = 'rgb(236, 134, 134)'
+            }
+        </script>
+</body>
+</html>
